@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeEventsFragment">
+
+    <fragment
+        android:id="@+id/eventDetailFragment"
+        android:name="com.example.androidfundamental1.ui.fragments.EventDetailFragment"
+        android:label="EventDetailFragment">
+        <argument
+            android:name="eventId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pastEventsFragment"
+        android:name="com.example.androidfundamental1.ui.fragments.PastEventsFragment"
+        android:label="PastEventsFragment">
+        <action
+            android:id="@+id/action_pastEventsFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment">
+            <!-- Pastikan argumen eventId dilewatkan -->
+            <argument
+                android:name="eventId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/upcomingEventsFragment"
+        android:name="com.example.androidfundamental1.ui.fragments.UpcomingEventsFragment"
+        android:label="UpcomingEventsFragment">
+        <action
+            android:id="@+id/action_to_event_detail"
+            app:destination="@id/eventDetailFragment">
+            <argument
+                android:name="eventId"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/homeEventsFragment"
+        android:name="com.example.androidfundamental1.ui.fragments.HomeEventsFragment"
+        android:label="HomeEventsFragment" >
+        <action
+            android:id="@+id/action_homeEventsFragment_to_eventDetailFragment"
+            app:destination="@id/eventDetailFragment" />
+    </fragment>
+
+</navigation>

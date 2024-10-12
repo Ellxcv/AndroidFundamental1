@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AndroidFundamental1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="event_logo">Event Logo</string>
+    <string name="register">register</string>
+    <string name="todo">TODO</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_time_and_location">Event Time and Location</string>
+    <string name="past_events">Past Events</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="nama_event">Event Name</string>
+    <string name="category">Category</string>
+    <string name="event_summary">Event Summary</string>
+    <string name="begintime_endtime">BeginTime - EndTime</string>
+    <string name="city_name">City Name</string>
+    <string name="gambar_event">gambar event</string>
+    <string name="event_image">event image</string>
+    <string name="judul_event">Judul Event</string>
+    <string name="event_time_format">%1$s - %2$s</string> <!-- Menambahkan format waktu -->
+    <string name="event_time_and_location_format">%1$s - %2$s, %3$s</string>
+    <string name="remaining_quota_format">Sisa kuota: %1$d</string>
+    <string name="event_owner_format">Penyelenggara: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="upcoming_event">Upcoming Event</string>
+    <string name="past_event">Past Event</string>
+    <string name="event_quota">Event Quota</string>
+    <string name="event_owner">Event Owner</string>
+    <string name="search">Search</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="retry_load">Retry Load</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center">
+
+        <!-- Gambar Event -->
+        <ImageView
+            android:id="@+id/eventLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/event_logo" />
+
+        <!-- Judul Event -->
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?android:textColorSecondary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="@string/nama_event" />
+
+        <!-- Kategori Event -->
+        <TextView
+            android:id="@+id/eventCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/category"
+            android:textColor="@color/purple"
+            android:textSize="14sp" />
+
+        <!-- Deskripsi Event -->
+        <TextView
+            android:id="@+id/eventSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/event_summary"
+            android:textColor="?android:textColorSecondary" />
+
+        <!-- Waktu Event -->
+        <TextView
+            android:id="@+id/eventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/begintime_endtime"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Nama Kota -->
+        <TextView
+            android:id="@+id/eventCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/city_name"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
